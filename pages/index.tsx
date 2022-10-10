@@ -14,7 +14,7 @@ import ImgWhatsapp from '../assets/whatsapp.png'
 const Home: NextPage = () => {
   return (
     <div className='absolute w-full'>
-      <a href='https://web.whatsapp.com/send?phone=554299261950' className='fixed bottom-10  flex items-center justify-center right-10 md:right-24 z-10 rounded-full bg-[#229B4B] hover:bg-green-500 outline-none drop-shadow-none w-[50px] h-[50px]'>
+      <a href='https://web.whatsapp.com/send?phone=5542999261950' className='fixed bottom-10  flex items-center justify-center right-10 md:right-24 z-10 rounded-full bg-[#229B4B] hover:bg-green-500 outline-none drop-shadow-none w-[50px] h-[50px]'>
         <Image src={ImgWhatsapp}/>
       </a>
       <NavBar/>
