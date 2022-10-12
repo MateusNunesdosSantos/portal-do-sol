@@ -80,7 +80,7 @@ export function NavBar() {
   );
 
     return (
-        <nav className="mx-auto fixed z-30 w-screen py-1  px-20 border-b-2 border-yellow-700 bg-white">
+        <nav className="mx-auto fixed z-30 w-screen py-1 px-5  md:px-20 border-b-2 border-yellow-700 bg-white">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Image  src={ImgLogo}/>
             <div className="hidden lg:block">{navList}</div>
