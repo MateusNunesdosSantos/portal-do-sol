@@ -4,11 +4,14 @@ import { FormEvent, useState } from "react";
 import { sendScheduleMail } from "../../services/sendMail";
 import { InputBase } from "../Input";
 import toast from 'react-hot-toast'
+import InputMask from 'react-input-mask';
 
 export function FormSchedule() {
     const [name, setName] =  useState('');
     const [day, setDay] =  useState('');
     const [quantity, setQuantity] =  useState('');
+    const [phone, setPhone] =  useState('');
+
 
     const [loading, setLoading] = useState(false)
 
@@ -28,11 +31,12 @@ export function FormSchedule() {
         }
         try {
             setLoading(true)
-            await sendScheduleMail(name, day, quantity)
+            await sendScheduleMail(name, day, quantity, phone)
             
             setName('')
             setDay('')
             setQuantity('')
+            setPhone('')
 
             toast('Mensagem envada com sucesso!!', {
                 style: {
@@ -77,6 +81,17 @@ export function FormSchedule() {
                     value={quantity}
                     onChange={({target}) => setQuantity(target.value)}
                 />
+                <InputMask 
+                   className='px-3 w-[19.163rem] h-[3.563rem] border-solid border-1 placeholder:text-gray-600 outline-amber-600 rounded-md 
+                   text-gray-900  border-gray-100 bg-gray-100/50'
+                    mask="(99) 99999-9999"
+                    placeholder='(42)99999-9999' 
+                    type='tel'
+                    value={phone}
+                    onChange={({target}) => setPhone(target.value)}
+                
+                />
+             
                 <button 
                     disabled={loading}
                     type="submit"

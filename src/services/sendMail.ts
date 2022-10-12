@@ -1,11 +1,12 @@
 import axios from 'axios'
 
 
-export const sendScheduleMail =  async (name: string, day: string, quantity: string) => {
+export const sendScheduleMail =  async (name: string, day: string, quantity: string, phone: string) => {
     const data = {
         name,
         day,
-        quantity
+        quantity,
+        phone,
     }
 
     try {

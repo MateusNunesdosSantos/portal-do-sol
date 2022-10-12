@@ -6,7 +6,7 @@ interface InputBaseProps extends InputProps {
     placeholder?: string
     type?: string
     onChange?: ChangeEventHandler<HTMLInputElement>
-    value: string
+    value: string | number
 }
 
 export function InputBase({placeholder,type, onChange, value}: InputBaseProps) {

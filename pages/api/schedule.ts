@@ -16,9 +16,9 @@ const transporter = nodemailer.createTransport(
 
 export default async ( req: NextApiRequest,  res: NextApiResponse) => {
   try {
-    const { name, day, quantity} = req.body
+    const { name, day, quantity, phone} = req.body
 
-    if(!name.trim() || !day.trim() || !quantity.trim()) {
+    if(!name.trim() || !day.trim() || !quantity.trim() || !phone.trim()) {
       return res.status(403).send('')
     }
 
@@ -34,6 +34,9 @@ export default async ( req: NextApiRequest,  res: NextApiResponse) => {
               <p>
                 <b>Quantidade de Pessos: </b>
                 ${quantity}
+                <br /> 
+                <b>Telefone: </b>
+                ${phone}
               </p>
              `,
     }
