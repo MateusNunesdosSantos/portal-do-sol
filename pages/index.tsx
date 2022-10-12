@@ -15,7 +15,7 @@ import { Contact } from '../src/components/Contacts'
 const Home: NextPage = () => {
   return (
     <div className='absolute w-full'>
-    
+      <ButtonWhatsapp/>
       <NavBar/>
       <Header/>
       <AboutSection/>
