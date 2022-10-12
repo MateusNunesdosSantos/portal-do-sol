@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import {Map} from './components/Map'
+import {Map} from './Map'
 
 export function Contact() {
     return (
