@@ -2,7 +2,7 @@
 import { Data } from '@react-google-maps/api'
 import type { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
-import sendgridTransport from 'nodemailer-sendgrid-transport'
+import * as sendgridTransport from 'nodemailer-sendgrid-transport' 
 
 const email = process.env.MAILADRESS
 
@@ -48,10 +48,9 @@ export default async ( req: NextApiRequest,  res: NextApiResponse) => {
     
     res.send('')
 
-  } catch (err) {
+  } catch (erro) {
     return res.json({
       error: true,
-      message: err.message
     })
   }
 }
