@@ -1,4 +1,5 @@
 import { Typography } from "@material-tailwind/react";
+import { FormContact } from "./FormContact";
 import {Map} from './Map'
 
 export function Contact() {
@@ -6,7 +7,9 @@ export function Contact() {
         <section id="pageContact" className="flex justify-center items-center gap-52 md:h-[98vh]">
             <div className="text-center">
                 <Typography>Gostaria de reber a tabela de valores?</Typography>
-                <div className="bg-gray-600  md:w-[24.125rem]"> adad</div>
+                <div className="bg-gray-600  md:w-[24.125rem]">
+                    <FormContact/>
+                </div>
 
 
             </div>

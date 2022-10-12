@@ -1,15 +1,15 @@
 import { Button } from "@material-tailwind/react";
 import Typography from "@material-tailwind/react/components/Typography";
 import { FormEvent, useState } from "react";
-import { sendScheduleMail } from "../../services/sendMail";
+import { sendContactMail } from "../../services/sendMailContact";
 import { InputBase } from "../Input";
 import toast from 'react-hot-toast'
 import InputMask from 'react-input-mask';
 
-export function FormSchedule() {
+export function FormContact() {
     const [name, setName] =  useState('');
-    const [day, setDay] =  useState('');
-    const [quantity, setQuantity] =  useState('');
+    const [email, setEmail] =  useState('');
+    const [message, setMessage] =  useState('');
     const [phone, setPhone] =  useState('');
 
 
@@ -20,7 +20,7 @@ export function FormSchedule() {
 
         if(loading) return
 
-        if(!name.trim() || !day.trim() || !quantity.trim() || !phone.trim()) {
+        if(!name.trim() || !email.trim() || !message.trim() || !phone.trim()) {
             toast('Preencha todos os campos para enviar seu agendamento!', {
                 style: {
                     background: '#990000',
@@ -31,11 +31,11 @@ export function FormSchedule() {
         }
         try {
             setLoading(true)
-            await sendScheduleMail(name, day, quantity, phone)
+            await sendContactMail(name, email, message, phone)
             
             setName('')
-            setDay('')
-            setQuantity('')
+            setEmail('')
+            setMessage('')
             setPhone('')
 
             toast('Mensagem envada com sucesso!!', {
@@ -60,30 +60,26 @@ export function FormSchedule() {
     return (
         <form 
             onSubmit={handleSubmit}
-            className='bg-white/60 rounded-lg flex items-center flex-col gap-8 p-10 mb-[10rem] md:mb-[0rem] justify-center '>
+            className='bg-[#303841] rounded-lg flex items-center flex-col gap-8 p-10 mb-[10rem] md:mb-[0rem] justify-center '>
                 <Typography variant="h3" className="text-[#303841] font-semibold">AGENDE SUA VISITA</Typography>
                 <hr className="mx-auto mt-[-2rem] w-48 h-1 bg-amber-500 rounded border-0"></hr>
-                <InputBase 
+                <input
+                className="px-3 w-[19.163rem] h-[3.563rem] border-solid border-1 placeholder:text-gray-600 outline-amber-600 rounded-md " 
                     placeholder='Nome' 
                     type='text'
                     value={name}
                     onChange={({target}) => setName(target.value)}
                 />
-                <InputBase 
-                    placeholder='Dia da Visita' 
-                    type='date'
-                    value={day}
-                    onChange={({target}) => setDay(target.value)}
-                />
-                <InputBase 
-                    placeholder='Quantidade de Pessoas' 
-                    type='text'
-                    value={quantity}
-                    onChange={({target}) => setQuantity(target.value)}
+                <input
+                    className="px-3 w-[19.163rem] h-[3.563rem] border-solid border-1 placeholder:text-gray-600 outline-amber-600 rounded-md "
+                    placeholder='Email' 
+                    type='email'
+                    value={email}
+                    onChange={({target}) => setEmail(target.value)}
                 />
                 <InputMask 
                    className='px-3 w-[19.163rem] h-[3.563rem] border-solid border-1 placeholder:text-gray-600 outline-amber-600 rounded-md 
-                   text-gray-900  border-gray-100 bg-gray-100/50'
+                   text-gray-900  border-gray-100 bg-white'
                     mask="(99) 99999-9999"
                     placeholder='(42)99999-9999' 
                     type='tel'
@@ -92,6 +88,13 @@ export function FormSchedule() {
                 
                 />
              
+                <textarea 
+                    className="p-3 w-[19.163rem] h-[5.563rem] resize-none border-solid border-1 placeholder:text-gray-600 outline-amber-600 rounded-md "
+                    placeholder='Menssagem' 
+                    value={message}
+                    onChange={({target}) => setMessage(target.value)}
+                >
+                </textarea>
                 <button 
                     disabled={loading}
                     type="submit"

@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
 import * as sendgridTransport from 'nodemailer-sendgrid-transport' 
 
-const email = process.env.MAILADRESS
+const emailPrincipal = process.env.MAILADRESS
 
 const transporter = nodemailer.createTransport(
   sendgridTransport({
@@ -16,32 +16,33 @@ const transporter = nodemailer.createTransport(
 
 export default async ( req: NextApiRequest,  res: NextApiResponse) => {
   try {
-    const { name, day, quantity, phone} = req.body
+    const { name, email, message, phone} = req.body
 
-    if(!name.trim() || !day.trim() || !quantity.trim() || !phone.trim()) {
+    if(!name.trim() || !email.trim() || !message.trim() || !phone.trim()) {
       return res.status(403).send('')
     }
 
-    const message = {
-      from: email,
-      to: email,
-      subject: `Nova Mensagem de Agendamento - ${name}`,
+    const messagem = {
+      from: emailPrincipal,
+      to: emailPrincipal,
+      subject: `Nova Mensagem de contato - ${name}`,
       html: ` <p>
-                <b>Dia Agendado: </b> 
-                ${day}
+                <b>Email: </b> 
+                ${email}
               </p>
               <br /> 
               <p>
-                <b>Quantidade de Pessos: </b>
-                ${quantity}
-                <br /> 
                 <b>Telefone: </b>
                 ${phone}
+                <br /> 
+                <b>Mensagem: </b>
+                ${message}
               </p>
              `,
+    replayTo: email
     }
 
-    transporter.sendMail(message, (err, info) => {
+    transporter.sendMail(messagem, (err, info) => {
       if(err) {
         console.log(err)
       } else {
