@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ImgLogo from '../../assets/logoPortaldoSol.svg'
-import Link from "next/link";
+import {Link} from 'react-scroll/modules'
 
 import { useState, useEffect } from "react";
 import {
@@ -31,9 +31,16 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#" className="flex items-center">
+        <Link 
+          to="pageHome"  
+          className="flex items-center cursor-pointer"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -41,9 +48,16 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#" className="flex items-center">
+        <Link 
+          to="pageSobre" 
+          className="flex items-center cursor-pointer"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Sobre
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -51,15 +65,22 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#" className="flex items-center">
+        <Link 
+          to="pageContact" 
+          className="flex items-center cursor-pointer"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Contato
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
 
     return (
-        <nav className="mx-auto w-screen-xl py-1 px-4 border-b-2 border-yellow-700">
+        <nav className="mx-auto fixed z-30 w-screen py-1 px-4 border-b-2 border-yellow-700 bg-white">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Image  src={ImgLogo}/>
             <div className="hidden lg:block">{navList}</div>

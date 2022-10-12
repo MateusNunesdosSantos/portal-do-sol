@@ -6,7 +6,7 @@ import ImageAbout from '../../assets/About.png'
 
 export function AboutSection() {
     return(
-        <section className="flex justify-center items-center flex-col mt-[5rem] ">
+        <section id="pageSobre" className="flex justify-center items-center flex-col mt-[5rem] md:h-[98vh] ">
            <div className="space-y-3">
             <Typography  variant="h5">Um paraíso que vai de encontro ao seu estilo de vida</Typography>
                 <LineBase/>
