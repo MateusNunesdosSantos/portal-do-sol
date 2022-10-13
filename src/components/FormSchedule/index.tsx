@@ -60,9 +60,9 @@ export function FormSchedule() {
     return (
         <form 
             onSubmit={handleSubmit}
-            className='bg-white/60 rounded-lg flex items-center flex-col gap-8 p-10 mb-[10rem] md:mb-[0rem] justify-center '>
+            className='bg-white/60 rounded-lg flex items-center flex-col gap-4 p-10 mb-[10rem] md:mb-[2rem] justify-center '>
                 <Typography variant="h3" className="text-[#303841] font-semibold">AGENDE SUA VISITA</Typography>
-                <hr className="mx-auto mt-[-2rem] w-48 h-1 bg-amber-500 rounded border-0"></hr>
+                <hr className="mx-auto  w-48 h-1 bg-amber-500 rounded border-0"></hr>
                 <InputBase 
                     placeholder='Nome' 
                     type='text'
