@@ -3,32 +3,93 @@ import svg01 from '../../assets/svg1.svg'
 import svg02 from '../../assets/svg2.svg'
 import svg03 from '../../assets/svg3.svg'
 import svg04 from '../../assets/svg04.svg'
+import Image10 from '../../assets/img-10.jpeg'
+
 import { ItensDetails } from "./ItensDetails";
+import Image from 'next/image'
 
 
 export function Details() {
     return(
-        <section className="text-[#303841] bg-no-repeat flex justify-center items-center bg-cover bg-center md:h-[51.25rem] bg-[url('../assets/bg-site.png')]">
-                <div className="flex md:ml-[40rem] m-5 md:mt-[25rem] flex-col md:mb-[25rem] bg-white/50 p-14 space-y-10 rounded-lg">
-                    <div className="flex flex-col items-center md:items-start">
-                        <Typography  variant="h5">No Portal do Sol você tem </Typography>
-                        <hr className="w-32 h-1 bg-amber-500 rounded border-0"/>
-                    </div>
-                    <div className="space-y-16">
-                         <ItensDetails 
-                            image={svg01} 
-                            text="Desfrute do privilégio de ter uma praia artificial no jardim de casa. Areia fofinha e água cristalina estão confirmadas em dias irresistíveis de sol."/>
-                        <ItensDetails 
-                            image={svg02} 
-                            text="Desfrute do privilégio de ter uma praia artificial no jardim de casa. Areia fofinha e água cristalina estão confirmadas em dias irresistíveis de sol."/>
-                        <ItensDetails 
-                            image={svg03} 
-                            text="Desfrute do privilégio de ter uma praia artificial no jardim de casa. Areia fofinha e água cristalina estão confirmadas em dias irresistíveis de sol."/>
-                        <ItensDetails 
-                            image={svg04} 
-                            text="Desfrute do privilégio de ter uma praia artificial no jardim de casa. Areia fofinha e água cristalina estão confirmadas em dias irresistíveis de sol."/>         
+        <section className=" bg-no-repeat   bg-cover bg-center  bg-[url('../assets/bg-site.png')]">
+          <div className="flex justify-end items-center bg-gray-900/50 text-white">
+            <div className="max-w-screen-xl  px-4 py-16 sm:px-6 lg:px-8">
+                <div className="max-w-xl">
+                <h2 className="text-3xl font-bold sm:text-4xl">No Portal do Sol você tem</h2>
+
+                <hr className="mt-4 w-48 h-1 bg-amber-500 rounded border-0"></hr>
+                </div>
+
+                <div
+                className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-2"
+                >               
+                <div className="flex items-start">
+                    <span className="flex-shrink-0 rounded-lg  p-4">
+                        <Image src={svg01}/>
+                    </span>
+
+                    <div className="ml-4">
+                    <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+
+                    <p className="mt-1 text-sm text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        cumque tempore est ab possimus quisquam reiciendis tempora animi!
+                        Quaerat, saepe?
+                    </p>
                     </div>
                 </div>
+
+                <div className="flex items-start">
+                    <span className="flex-shrink-0 rounded-lg p-4">
+                     <Image src={svg02}/>
+                    </span>
+
+                    <div className="ml-4">
+                    <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+
+                    <p className="mt-1 text-sm text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        cumque tempore est ab possimus quisquam reiciendis tempora animi!
+                        Quaerat, saepe?
+                    </p>
+                    </div>
+                </div>
+
+                <div className="flex items-start">
+                    <span className="flex-shrink-0 rounded-lg p-4">
+                        <Image src={svg03}/>
+                    </span>
+
+                    <div className="ml-4">
+                    <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+
+                    <p className="mt-1 text-sm text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        cumque tempore est ab possimus quisquam reiciendis tempora animi!
+                        Quaerat, saepe?
+                    </p>
+                    </div>
+                </div>
+
+                <div className="flex items-start">
+                    <span className="flex-shrink-0 rounded-lg  p-4">
+                        <Image src={svg04}/>
+                    </span>
+
+                    <div className="ml-4">
+                    <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+
+                    <p className="mt-1 text-sm text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        cumque tempore est ab possimus quisquam reiciendis tempora animi!
+                        Quaerat, saepe?
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
         </section>
     )
 }
