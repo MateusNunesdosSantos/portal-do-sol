@@ -13,8 +13,8 @@ export function Header() {
               <FormSchedule/>
               <div className='text-white text-center space-y-3' >
                   <Typography variant="lead">BEM-VINDO(A) AO  </Typography>
-                  <Typography variant="h3">Condomínio Protal do Sol</Typography>
-                  <Typography variant="h3" className="sm:text-2xl md:text-4xl">CONDOMÍNIO PARTICULAR </Typography >
+                  <Typography variant="h3">Condomínio Náutico Protal do Sol</Typography>
+                  <Typography variant="h3" className="sm:text-2xl md:text-4xl">VIVA CERCADO POR QUILÔMETROS <br/> DE NATUREZA</Typography >
                   <hr className="mx-auto w-48 h-1 bg-amber-500 rounded border-0"></hr>
               </div>
             </div>

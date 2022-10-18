@@ -4,12 +4,12 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
 import * as sendgridTransport from 'nodemailer-sendgrid-transport' 
 
-const emailPrincipal = process.env.MAILADRESS
+const emailPrincipal = process.env.NEXT_MAILADRESS
 
 const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
-      api_key: process.env.SENDGRID_API_KEY
+      api_key: process.env.NEXT_SENDGRID_API_KEY
     }
   })
 )
