@@ -1,8 +1,6 @@
-import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
-import { LineBase } from "./Line";
-import ImageAbout from '../../assets/About.png'
-import {Link} from 'react-scroll/modules'
+import ImageAbout from "../../assets/About.png"
+import {Link} from "react-scroll/modules"
 
 export function AboutSection() {
     return(
