@@ -28,8 +28,8 @@ export function AboutSection() {
                 represa de Máua onde você pode desfrutar de esportes náuticos,
                 pesca esportiva ou simplesmente contemplar a paisagem. Tudo isto
                 sem perder os benefícios tecnológicos da cidade. Trabalhe em
-                {" '"}Home Office{"' "} com internet fibra ótica. Aproveite a vida
-                agora!
+                {" '"}Home Office{"' "} com internet fibra ótica. Aproveite a
+                vida agora!
               </p>
 
               <div className="mt-4 md:mt-8">

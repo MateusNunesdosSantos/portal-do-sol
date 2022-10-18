@@ -1,23 +1,23 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
-import * as sendgridTransport from 'nodemailer-sendgrid-transport' 
+import * as sendgridTransport from 'nodemailer-sendgrid-transport'
 
 const email = process.env.NEXT_MAILADRESS
 
 const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
-      api_key: process.env.NEXT_SENDGRID_API_KEY
-    }
-  })
+      api_key: process.env.NEXT_SENDGRID_API_KEY,
+    },
+  }),
 )
 
-export default async ( req: NextApiRequest,  res: NextApiResponse) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    const { name, day, quantity, phone} = req.body
+    const { name, day, quantity, phone } = req.body
 
-    if(!name.trim() || !day.trim() || !quantity.trim() || !phone.trim()) {
+    if (!name.trim() || !day.trim() || !quantity.trim() || !phone.trim()) {
       return res.status(403).send('')
     }
 
@@ -41,15 +41,14 @@ export default async ( req: NextApiRequest,  res: NextApiResponse) => {
     }
 
     transporter.sendMail(message, (err, info) => {
-      if(err) {
+      if (err) {
         console.log(err)
       } else {
         console.log('Message sent', info)
       }
     })
-    
-    res.send('')
 
+    res.send('')
   } catch (erro) {
     return res.json({
       error: true,
