@@ -1,4 +1,3 @@
-import IconButton from '@material-tailwind/react/components/IconButton'
 import type { NextPage } from 'next'
 import { AboutSection } from '../src/components/AboutSection'
 import { ButtonWhatsapp } from '../src/components/ButtonWhatsapp'
@@ -14,7 +13,7 @@ import { Contact } from '../src/components/Contacts'
 
 const Home: NextPage = () => {
   return (
-    <div className='absolute w-full'>
+    <div className="absolute w-full">
       <ButtonWhatsapp/>
       <NavBar/>
       <Header/>

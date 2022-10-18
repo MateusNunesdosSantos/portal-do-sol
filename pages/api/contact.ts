@@ -1,5 +1,4 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { Data } from '@react-google-maps/api'
 import type { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
 import * as sendgridTransport from 'nodemailer-sendgrid-transport' 

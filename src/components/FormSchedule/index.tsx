@@ -1,8 +1,7 @@
-import { Button } from "@material-tailwind/react";
-import Typography from "@material-tailwind/react/components/Typography";
-import { FormEvent, useState } from "react";
-import { sendScheduleMail } from "../../services/sendMail";
-import { InputBase } from "../Input";
+import Typography from '@material-tailwind/react/components/Typography';
+import { FormEvent, useState } from 'react';
+import { sendScheduleMail } from '../../services/sendMail';
+import { InputBase } from '../Input';
 import toast from 'react-hot-toast'
 import InputMask from 'react-input-mask';
 

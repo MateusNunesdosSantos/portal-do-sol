@@ -1,8 +1,6 @@
-import { Button } from "@material-tailwind/react";
-import Typography from "@material-tailwind/react/components/Typography";
-import { FormEvent, useState } from "react";
-import { sendContactMail } from "../../services/sendMailContact";
-import { InputBase } from "../Input";
+import Typography from '@material-tailwind/react/components/Typography';
+import { FormEvent, useState } from 'react';
+import { sendContactMail } from '../../services/sendMailContact';
 import toast from 'react-hot-toast'
 import InputMask from 'react-input-mask';
 
@@ -60,7 +58,7 @@ export function FormContact() {
     return (
         <form 
             onSubmit={handleSubmit}
-            className='bg-[#303841]/60 rounded-lg flex items-center flex-col gap-4 p-10 mb-[10rem] md:mb-[0rem] justify-center md:w-full w-[22rem]'>
+            className="bg-[#303841]/60 rounded-lg flex items-center flex-col gap-4 p-10 mb-[10rem] md:mb-[0rem] justify-center md:w-full w-[22rem]">
                 <Typography variant="h4" className="text-brown-50  font-semibold">AGENDE SUA VISITA</Typography>
                 <hr className="mx-auto w-48 h-1 bg-amber-500 rounded border-0"></hr>
                 <input

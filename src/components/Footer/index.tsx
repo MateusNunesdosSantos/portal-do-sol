@@ -1,9 +1,5 @@
-import { Typography } from "@material-tailwind/react";
-import Image from "next/image";
-
-import logoPortaldoSol from '../../../assets/logoPortaldoSol.svg'
+import Image from 'next/image';
 import ImgFooter from '../../../assets/img-01.png'
-import {BsInstagram, BsLinkedin, BsFacebook} from 'react-icons/bs'
 
 
 export function Footer() {

@@ -1,5 +1,5 @@
-import { InputProps } from "@material-tailwind/react"
-import { ChangeEventHandler } from "react"
+import { InputProps } from '@material-tailwind/react'
+import { ChangeEventHandler } from 'react'
 
 
 interface InputBaseProps extends InputProps {
