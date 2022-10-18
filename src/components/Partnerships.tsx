@@ -2,13 +2,6 @@ import LogoParcerias01 from '../../assets/logoEspacoSmart.svg'
 import LogoParcerias02 from '../../assets/logoComercial.svg'
 import LogoParcerias03 from '../../assets/logoLojasMM.svg'
 import Image from 'next/image'
-import { Typography } from '@material-tailwind/react'
-
-const parcerias = {
-    title: 'Espaço Smart'
-}
-
-
 
 
 export function Partnerships() {

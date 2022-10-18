@@ -1,7 +1,4 @@
-import imgBgHome from '../../assets/bg-home.png'
-import Image from 'next/image'
-import { Button, Typography } from '@material-tailwind/react'
-import { InputBase } from './Input'
+import { Typography } from '@material-tailwind/react'
 import { FormSchedule } from './FormSchedule'
 
 export function Header() {

@@ -5,9 +5,8 @@ import svg03 from '../../assets/svg3.svg'
 import svg04 from '../../assets/svg04.svg'
 import Image10 from '../../assets/img-10.jpeg'
 
-import { ItensDetails } from "./ItensDetails";
 import Image from 'next/image'
-import { Link } from "react-scroll/modules";
+import { Link } from 'react-scroll/modules';
 
 
 export function Details() {

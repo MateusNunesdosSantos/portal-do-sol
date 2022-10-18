@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image';
 import ImgLogo from '../../assets/logoPortaldoSol.svg'
 import {Link} from 'react-scroll/modules'
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import {
   Navbar,
   MobileNav,

@@ -1,6 +1,4 @@
-import { Typography } from "@material-tailwind/react";
-import { FormContact } from "./FormContact";
-import {Map} from './Map'
+import { FormContact } from './FormContact';
 
 export function Contact() {
     return (

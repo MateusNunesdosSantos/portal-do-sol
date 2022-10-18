@@ -1,19 +1,13 @@
-import { Typography } from "@material-tailwind/react";
-import Image from "next/image";
-import { LineBase } from "./Line";
+import { Typography } from '@material-tailwind/react';
+import Image from 'next/image';
+import { LineBase } from './Line';
 import Image01 from '../../assets/img-01.png'
-import Image02 from '../../assets/img-02.png'
 import Image03 from '../../assets/img-03.jpeg'
 import Image04 from '../../assets/img-04.jpeg'
-import Image05 from '../../assets/img-05.jpeg'
 import Image06 from '../../assets/img-06.jpeg'
 import Image07 from '../../assets/img-07.jpeg'
-import Image08 from '../../assets/img-08.jpeg'
-import Image09 from '../../assets/img-09.jpeg'
-import Image10 from '../../assets/img-10.jpeg'
-import Image11 from '../../assets/img-11.jpeg'
 import Image12 from '../../assets/img-12.jpeg'
-import { Link } from "react-scroll/modules";
+import { Link } from 'react-scroll/modules';
 
 
 

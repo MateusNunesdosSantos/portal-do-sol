@@ -1,6 +1,6 @@
-import Image from "next/image";
-import ImageAbout from "../../assets/About.png"
-import {Link} from "react-scroll/modules"
+import Image from 'next/image';
+import ImageAbout from '../../assets/About.png'
+import {Link} from 'react-scroll/modules'
 
 export function AboutSection() {
     return(
