@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
 import * as sendgridTransport from 'nodemailer-sendgrid-transport'
-import {NEXT_MAILADRESS, NEXT_SENDGRID_API_KEY} from './utils'
+import { NEXT_MAILADRESS, NEXT_SENDGRID_API_KEY } from './utils'
 
 const email = NEXT_MAILADRESS
 
