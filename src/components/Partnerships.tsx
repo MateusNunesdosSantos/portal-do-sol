@@ -1,12 +1,10 @@
 import LogoParcerias01 from '../../assets/logoEspacoSmart.svg'
 import LogoParcerias02 from '../../assets/logoComercial.svg'
 import LogoParcerias03 from '../../assets/logoLojasMM.svg'
-//import LogoParcerias04 from '../../assets/logo-abc.svg'
+// import LogoParcerias04 from '../../assets/logo-abc.svg'
 import LogoParcerias05 from '../../assets/logo-deltacel.png'
 import LogoParcerias06 from '../../assets/logo-locatelli.png'
 import LogoParcerias07 from '../../assets/logo-Monatelli.png'
-
-
 
 import Image from 'next/image'
 
