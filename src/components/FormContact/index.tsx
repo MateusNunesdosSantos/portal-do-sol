@@ -53,7 +53,7 @@ export function FormContact() {
     }
   }
   return (
-    <form
+    <form data-aos="flip-left"
       onSubmit={handleSubmit}
       className="bg-[#303841]/60 rounded-lg flex items-center flex-col gap-4 p-10 mb-[10rem] md:mb-[0rem] justify-center md:w-full w-[22rem]"
     >

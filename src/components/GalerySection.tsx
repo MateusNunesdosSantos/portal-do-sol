@@ -12,47 +12,47 @@ import { Link } from 'react-scroll/modules'
 export function GalerySection() {
   return (
     <section className="flex justify-center items-center flex-col mt-[5rem] drop-shadow-md border-2 px-5 pb-[5rem] bg-yellow-50">
-      <div className="space-y-3 mt-8">
+      <div data-aos="fade-right" className="space-y-3 mt-8">
         <Typography variant="h5">Momentos únicos esperam você aqui.</Typography>
         <LineBase />
       </div>
       <div className="py-6 w-full flex flex-col justify-center items-center">
         <div className="container grid grid-cols-1 gap-4 p-4 mx-auto md:grid-cols-3 sm:grid-cols-2">
-          <Image
+          <Image data-aos="zoom-in"
             src={Image01}
             alt=""
             className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square"
           />
 
-          <Image
+          <Image data-aos="zoom-in"
             src={Image03}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
           />
-          <Image
+          <Image data-aos="zoom-in"
             src={Image04}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
           />
 
-          <Image
+          <Image data-aos="zoom-in"
             src={Image06}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
           />
-          <Image
+          <Image data-aos="zoom-in"
             src={Image07}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
           />
-          <Image
+          <Image data-aos="zoom-in"
             src={Image12}
             alt=""
             className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 dark:bg-gray-500 aspect-square"
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <Link
+          <Link data-aos="zoom-up"
             to="pageHome"
             spy={true}
             smooth={true}

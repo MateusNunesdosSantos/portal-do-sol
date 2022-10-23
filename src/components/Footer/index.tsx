@@ -2,9 +2,9 @@ import { Link } from 'react-scroll/modules'
 
 export function Footer() {
   return (
-    <footer aria-label="Site Footer" className="bg-gray-900">
-      <div className="mx-auto w-full flex flex-col md:flex-row max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1  gap-8 lg:grid-cols-3">
+    <footer data-aos="fade-up" aria-label="Site Footer" className="bg-gray-900">
+      <div data-aos="fade-left" className="mx-auto w-full flex flex-col md:flex-row max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div  className="grid grid-cols-1  gap-8 lg:grid-cols-3">
           <div>
             <h2 className="flex items-center justify-center font-bold h-10 w-32 rounded-lg bg-amber-700 ">
               Exclusividade
@@ -111,7 +111,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="mx-auto flex max-w-screen-xl pb-20 flex-col gap-5">
+      <div  className="mx-auto flex max-w-screen-xl pb-20 flex-col gap-5">
         <p className="text-xs text-gray-50">
           &copy; 2022 Condomínio Náutico Protal do Sol
         </p>

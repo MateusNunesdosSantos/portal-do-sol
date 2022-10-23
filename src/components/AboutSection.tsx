@@ -7,13 +7,13 @@ export function AboutSection() {
     <>
       <section id="pageSobre"></section>
       <section className="mt-56 flex justify-center">
-        <aside className="overflow-hidden rounded-lg bg-yellow-50 p-5 sm:grid sm:grid-cols-2">
-          <Image
+        <aside  className="overflow-hidden rounded-lg bg-yellow-50 p-5 sm:grid sm:grid-cols-2">
+          <Image data-aos="fade-right"
             alt="Student"
             src={ImageAbout}
             className="h-56  object-contain sm:h-full"
           />
-          <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+          <div data-aos="fade-left" className="p-8 md:p-12 lg:px-16 lg:py-24">
             <div className="mx-auto max-w-xl text-center sm:text-left">
               <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
                 Viva o inexplicável.
@@ -33,7 +33,7 @@ export function AboutSection() {
               </p>
 
               <div className="mt-4 md:mt-8">
-                <Link
+                <Link data-aos="fade-up"
                   to="pageHome"
                   spy={true}
                   smooth={true}
