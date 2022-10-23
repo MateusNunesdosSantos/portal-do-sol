@@ -10,18 +10,103 @@ import Image from 'next/image'
 
 export function Partnerships() {
   return (
-    <section className="bg-amber-700">
-      <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
-        <h2 className="text-3xl font-bold text-gray-900">Parcerias</h2>
-        <div className="container grid grid-cols-2 gap-8 p-4 mx-auto md:grid-cols-3 sm:grid-cols-2">
-          <Image src={LogoParcerias01} />
-          <Image src={LogoParcerias02} />
-          <Image src={LogoParcerias03} />
-          <Image src={LogoParcerias05} />
-          <Image src={LogoParcerias06} />
-          <Image src={LogoParcerias07} />
+    <section className="bg-amber-700">  
+        <div className="p-8 rounded-lg shadow">
+            <p className="text-center text-3xl font-bold text-gray-900 dark:text-white">
+                Parcerias
+            </p>
+            
+            <div className="grid grid-cols-1 items-center md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-6 gap-4">
+                <div className="p-4">
+                    <div className="flex-col  flex justify-center items-center">
+                        <div className="flex-shrink-0">
+                            <a href="#" className="block relative">
+                                <Image src={LogoParcerias01} />
+                            </a>
+                        </div>
+                        <div className="mt-2 text-center flex flex-col">
+                            <span className="text-gray-900 dark:text-white text-md font-medium">
+                              Ponta Grossa
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4">
+                    <div className="flex-col  flex justify-center items-center">
+                        <div className="flex-shrink-0">
+                            <a href="#" className="block relative">
+                            <Image src={LogoParcerias02} />
+                            </a>
+                        </div>
+                        <div className="mt-2 text-center flex flex-col">
+                            <span className="text-gray-900 dark:text-white text-md font-medium">
+                              Telêmaco Borba
+                            </span>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4">
+                    <div className="flex-col  flex justify-center items-center">
+                        <div className="flex-shrink-0">
+                            <a href="#" className="block relative">
+                            <Image src={LogoParcerias03} />
+
+                            </a>
+                        </div>
+                        <div className="mt-2 text-center flex flex-col">
+                            <span className="text-gray-900 dark:text-white text-md font-medium">
+                            Telêmaco Borba
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4">
+                    <div className="flex-col  flex justify-center items-center">
+                        <div className="flex-shrink-0">
+                            <a href="#" className="block relative">
+                            <Image src={LogoParcerias05} />
+                            </a>
+                        </div>
+                        <div className="mt-2 text-center flex flex-col">
+                            <span className="text-gray-900 dark:text-white text-md font-medium">
+                              Ponta Grossa
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4">
+                    <div className="flex-col  flex justify-center items-center">
+                        <div className="flex-shrink-0">
+                            <a href="#" className="block relative">
+                            <Image src={LogoParcerias06} />
+                                
+                            </a>
+                        </div>
+                        <div className="mt-2 text-center flex flex-col">
+                            <span className="text-gray-900 dark:text-white text-md font-medium">
+                              Ortigueira
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4">
+                    <div className="flex-col  flex justify-center items-center">
+                        <div className="flex-shrink-0">
+                            <a href="#" className="block relative">
+                            <Image src={LogoParcerias07} />
+
+                            </a>
+                        </div>
+                        <div className="mt-2 text-center flex flex-col">
+                            <span className="text-gray-900 dark:text-white text-md font-medium">
+                              Ortigueira
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
   )
 }
