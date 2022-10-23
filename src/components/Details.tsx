@@ -7,8 +7,11 @@ import { Link } from 'react-scroll/modules'
 
 export function Details() {
   return (
-    <section  className=" bg-no-repeat   bg-cover bg-center  bg-[url('../assets/bg-site.png')]">
-      <div data-aos="fade-up" className="flex justify-end  pr-20 items-center bg-gray-900/40 text-white">
+    <section className=" bg-no-repeat   bg-cover bg-center  bg-[url('../assets/bg-site.png')]">
+      <div
+        data-aos="fade-up"
+        className="flex justify-end  pr-20 items-center bg-gray-900/40 text-white"
+      >
         <div className="max-w-screen-xl  px-4 py-16 sm:px-6 lg:px-8">
           <div className="max-w-xl">
             <h2 className="text-3xl font-bold sm:text-2xl">

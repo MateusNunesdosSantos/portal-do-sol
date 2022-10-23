@@ -54,7 +54,8 @@ export function FormSchedule() {
     }
   }
   return (
-    <form data-aos="fade-right"
+    <form
+      data-aos="fade-right"
       onSubmit={handleSubmit}
       className="bg-white/60 rounded-lg flex items-center flex-col gap-4 p-5 md:p10 mb-[10rem] md:mb-[2rem] justify-center "
     >

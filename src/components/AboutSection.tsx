@@ -7,8 +7,9 @@ export function AboutSection() {
     <>
       <section id="pageSobre"></section>
       <section className="mt-56 flex justify-center">
-        <aside  className="overflow-hidden rounded-lg bg-yellow-50 p-5 sm:grid sm:grid-cols-2">
-          <Image data-aos="fade-right"
+        <aside className="overflow-hidden rounded-lg bg-yellow-50 p-5 sm:grid sm:grid-cols-2">
+          <Image
+            data-aos="fade-right"
             alt="Student"
             src={ImageAbout}
             className="h-56  object-contain sm:h-full"
@@ -33,7 +34,8 @@ export function AboutSection() {
               </p>
 
               <div className="mt-4 md:mt-8">
-                <Link data-aos="fade-up"
+                <Link
+                  data-aos="fade-up"
                   to="pageHome"
                   spy={true}
                   smooth={true}

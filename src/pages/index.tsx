@@ -14,9 +14,8 @@ import 'aos/dist/aos.css'
 
 const Home: NextPage = () => {
   useEffect(() => {
-    Aos.init({duration: 1500})
-
-  },[])
+    Aos.init({ duration: 1500 })
+  }, [])
   return (
     <div className="absolute w-full">
       <ButtonWhatsapp />

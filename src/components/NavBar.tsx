@@ -16,7 +16,7 @@ export function NavBar() {
   }, [])
 
   const navList = (
-    <ul  className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -73,8 +73,11 @@ export function NavBar() {
 
   return (
     <nav className="mx-auto fixed z-30 w-screen py-1 px-5  md:px-20 border-b-2 border-yellow-700 bg-white">
-      <div data-aos="fade-left"className="container mx-auto flex items-center justify-between text-blue-gray-900">
-        <Image src={ImgLogo}  />
+      <div
+        data-aos="fade-left"
+        className="container mx-auto flex items-center justify-between text-blue-gray-900"
+      >
+        <Image src={ImgLogo} />
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"
