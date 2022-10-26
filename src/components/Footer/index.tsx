@@ -3,23 +3,20 @@ import { Link } from 'react-scroll/modules'
 export function Footer() {
   return (
     <footer data-aos="fade-up" aria-label="Site Footer" className="bg-gray-900">
-      <div
-        data-aos="fade-left"
-        className="mx-auto w-full flex flex-col md:flex-row max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8"
-      >
-        <div className="grid grid-cols-1  gap-8 lg:grid-cols-3">
+      <div className="flex flex-col w-full max-w-screen-xl px-4 py-16 mx-auto md:flex-row sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <h2 className="flex items-center justify-center font-bold h-10 w-32 rounded-lg bg-amber-700 ">
+            <h2 className="flex items-center justify-center w-32 h-10 font-bold rounded-lg bg-amber-700 ">
               Exclusividade
             </h2>
 
-            <p className="mt-4  text-sm text-gray-50">
+            <p className="mt-4 text-sm text-gray-50">
               Condomínios náuticos tem acessos privativos e exclusivos à água.
               Se você adquirir um terreno ou marina, além do acesso facilitado,
               você terá uma vista linda para a represa, da janela do seu quarto.
             </p>
 
-            <div className="mt-8 flex gap-6 text-gray-50">
+            <div className="flex gap-6 mt-8 text-gray-50">
               <a
                 className="hover:opacity-75"
                 href=""
@@ -29,7 +26,7 @@ export function Footer() {
                 <span className="sr-only"> Facebook </span>
 
                 <svg
-                  className="h-6 w-6"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -51,7 +48,7 @@ export function Footer() {
                 <span className="sr-only"> Instagram </span>
 
                 <svg
-                  className="h-6 w-6"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -69,9 +66,9 @@ export function Footer() {
 
         <div className="grid grid-cols-1 gap-8 mt-5 md:mt-0 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
           <div>
-            <p className="text-amber-700 font-bold">Company</p>
+            <p className="font-bold text-amber-700">Company</p>
 
-            <nav className="mt-4 flex flex-col space-y-2 text-sm w-48 text-gray-50">
+            <nav className="flex flex-col w-48 mt-4 space-y-2 text-sm text-gray-50">
               <Link
                 to="pageHome"
                 className="flex items-center cursor-pointer hover:opacity-75"
@@ -114,7 +111,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="mx-auto flex max-w-screen-xl pb-20 flex-col gap-5">
+      <div className="flex flex-col max-w-screen-xl gap-5 pb-20 mx-auto">
         <p className="text-xs text-gray-50">
           &copy; 2022 Condomínio Náutico Protal do Sol
         </p>

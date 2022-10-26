@@ -12,11 +12,11 @@ import { Link } from 'react-scroll/modules'
 export function GalerySection() {
   return (
     <section className="flex justify-center items-center flex-col mt-[5rem] drop-shadow-md border-2 px-5 pb-[5rem] bg-yellow-50">
-      <div data-aos="fade-right" className="space-y-3 mt-8">
+      <div data-aos="fade-up" className="mt-8 space-y-3">
         <Typography variant="h5">Momentos únicos esperam você aqui.</Typography>
         <LineBase />
       </div>
-      <div className="py-6 w-full flex flex-col justify-center items-center">
+      <div className="flex flex-col items-center justify-center w-full py-6">
         <div className="container grid grid-cols-1 gap-4 p-4 mx-auto md:grid-cols-3 sm:grid-cols-2">
           <Image
             data-aos="zoom-in"
@@ -66,7 +66,7 @@ export function GalerySection() {
             offset={50}
             duration={500}
             id="pLinkgeHome"
-            className="inline-block cursor-pointer rounded bg-amber-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-amber-500 focus:outline-none focus:ring focus:ring-yellow-400"
+            className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded cursor-pointer bg-amber-600 hover:bg-amber-500 focus:outline-none focus:ring focus:ring-yellow-400"
           >
             Faca seu agendamento
           </Link>

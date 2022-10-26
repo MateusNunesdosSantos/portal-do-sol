@@ -54,14 +54,13 @@ export function FormContact() {
   }
   return (
     <form
-      data-aos="flip-left"
       onSubmit={handleSubmit}
       className="bg-[#303841]/60 rounded-lg flex items-center flex-col gap-4 p-10 mb-[10rem] md:mb-[0rem] justify-center md:w-full w-[22rem]"
     >
-      <Typography variant="h4" className="text-brown-50  font-semibold">
+      <Typography variant="h4" className="font-semibold text-brown-50">
         AGENDE SUA VISITA
       </Typography>
-      <hr className="mx-auto w-48 h-1 bg-amber-500 rounded border-0"></hr>
+      <hr className="w-48 h-1 mx-auto border-0 rounded bg-amber-500"></hr>
       <input
         className="px-3 w-[19.163rem] h-[3.563rem] border-solid border-1 placeholder:text-gray-600 outline-amber-600 rounded-md "
         placeholder="Nome"

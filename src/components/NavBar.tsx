@@ -16,7 +16,7 @@ export function NavBar() {
   }, [])
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -72,16 +72,13 @@ export function NavBar() {
   )
 
   return (
-    <nav className="mx-auto fixed z-30 w-screen py-1 px-5  md:px-20 border-b-2 border-yellow-700 bg-white">
-      <div
-        data-aos="fade-left"
-        className="container mx-auto flex items-center justify-between text-blue-gray-900"
-      >
+    <nav className="fixed z-30 w-screen px-5 py-1 mx-auto bg-white border-b-2 border-yellow-700 md:px-20">
+      <div className="container flex items-center justify-between mx-auto text-blue-gray-900">
         <Image src={ImgLogo} />
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="w-6 h-6 ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -89,7 +86,7 @@ export function NavBar() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              className="h-6 w-6"
+              className="w-6 h-6"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth={2}
@@ -103,7 +100,7 @@ export function NavBar() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="w-6 h-6"
               fill="none"
               stroke="currentColor"
               strokeWidth={2}
@@ -119,11 +116,11 @@ export function NavBar() {
       </div>
       <MobileNav open={openNav}>{navList}</MobileNav>
     </nav>
-    // <div className="flex-row items-center justify-around bg-slate-50 border-b-2 border-yellow-700 flex px-10" >
+    // <div className="flex flex-row items-center justify-around px-10 border-b-2 border-yellow-700 bg-slate-50" >
     //         <div className="flex ">
     //             <Image width={130} height={93.13} src={ImgLogo}/>
     //         </div>
-    //         <div className="flex items-center gap-8 text-md font-semibold">
+    //         <div className="flex items-center gap-8 font-semibold text-md">
     //             <Link href='/'>Home</Link>
     //             <Link href='/about'>Sobre</Link>
     //         </div>

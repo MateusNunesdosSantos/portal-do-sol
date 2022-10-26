@@ -55,14 +55,14 @@ export function FormSchedule() {
   }
   return (
     <form
-      data-aos="fade-right"
+      data-aos="fade-up"
       onSubmit={handleSubmit}
       className="bg-white/60 rounded-lg flex items-center flex-col gap-4 p-5 md:p10 mb-[10rem] md:mb-[2rem] justify-center "
     >
       <Typography variant="h3" className="text-[#303841] font-semibold">
         AGENDE SUA VISITA
       </Typography>
-      <hr className="mx-auto  w-48 h-1 bg-amber-500 rounded border-0"></hr>
+      <hr className="w-48 h-1 mx-auto border-0 rounded bg-amber-500"></hr>
       <InputBase
         placeholder="Nome"
         type="text"
