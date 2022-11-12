@@ -1,5 +1,5 @@
 import Typography from '@material-tailwind/react/components/Typography'
-import { FormEvent, useState } from 'react'
+import { ChangeEvent, FormEvent, useState } from 'react'
 import { sendContactMail } from '../../services/sendMailContact'
 import toast from 'react-hot-toast'
 import InputMask from 'react-input-mask'
@@ -52,10 +52,26 @@ export function FormContact() {
       setLoading(false)
     }
   }
+
+  function sendEmail(event: ChangeEvent) {
+    event.preventDefault()
+
+    if (!name.trim() || !email.trim() || !message.trim() || !phone.trim()) {
+      toast('Preencha todos os campos para enviar seu agendamento!', {
+        style: {
+          background: '#990000',
+          color: '#FFF',
+        },
+      })
+    }
+
+    alert('TESTE')
+  }
+
   return (
     <form
       data-aos="fade-up"
-      onSubmit={handleSubmit}
+      onSubmit={sendEmail}
       className="bg-[#303841]/60 rounded-lg flex items-center flex-col gap-4 p-10 mb-[10rem] md:mb-[0rem] justify-center md:w-full w-[22rem]"
     >
       <Typography variant="h4" className="font-semibold text-brown-50">
