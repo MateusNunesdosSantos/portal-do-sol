@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ImgLogo from '../../assets/logoPortaldoSol.svg'
+import ImgLogo from '../../assets/logoIateClube.jpeg'
 import { Link } from 'react-scroll/modules'
 
 import { useState, useEffect } from 'react'
