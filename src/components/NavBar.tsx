@@ -74,7 +74,7 @@ export function NavBar() {
   return (
     <nav className="fixed z-30 w-screen px-5 py-1 mx-auto bg-white border-b-2 border-yellow-700 md:px-20">
       <div className="container flex items-center justify-between mx-auto text-blue-gray-900">
-        <Image src={ImgLogo} />
+        <Image width={150} height={70} src={ImgLogo} />
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"

@@ -11,7 +11,7 @@ export function Header() {
           <div data-aos="fade-up" className="space-y-5 text-center text-white">
             <Typography variant="lead">BEM-VINDO(A) AO </Typography>
             <Typography className="text-2xl md:text-6xl" variant="h3">
-              Condomínio Náutico Portal do Sol
+              Condomínio IATE CLUBE ORTIGUEIRA
             </Typography>
             <Typography variant="h4" className="text-2xl md:text-4xl">
               VIVA CERCADO POR QUILÔMETROS <br /> DE NATUREZA
