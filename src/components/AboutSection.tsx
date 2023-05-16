@@ -26,7 +26,7 @@ export function AboutSection() {
               >
                 Imagine viver em um paraíso cercado por natureza, em um refúgio
                 que alia tranquilidade e muito lazer. Esse é o Condomínio
-                IATE CLUEBE ORTIGUEIRA , um condomínio residencial que oferece
+                Náutico Portal do Sol , um condomínio residencial que oferece
                 lotes a partir de 600 m² com infraestrutura completa, segurança
                 24 horas e uma vista espetacular para o lago da barragem da
                 represa de Máua onde você pode desfrutar de esportes náuticos,
