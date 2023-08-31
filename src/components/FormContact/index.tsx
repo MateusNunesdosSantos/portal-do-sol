@@ -3,6 +3,7 @@ import { FormEvent, useState } from 'react'
 import { sendContactMail } from '../../services/sendMailContact'
 import toast from 'react-hot-toast'
 import InputMask from 'react-input-mask'
+import axios from 'axios'
 
 export function FormContact() {
   const [name, setName] = useState('')
@@ -28,12 +29,21 @@ export function FormContact() {
     }
     try {
       setLoading(true)
-      await sendContactMail(name, email, message, phone)
+      const data = {
+        NOME: name,
+        EMAIL: email,
+        MESSAGE: message,
+        TELEFONE: phone,
+      }
 
-      setName('')
-      setEmail('')
-      setMessage('')
-      setPhone('')
+      axios.post('https://sheet.best/api/sheets/ca885d7c-698e-4018-9f9f-eb8f997e22f9', data)
+      .then((response) => {
+        console.log(response);
+        setName('')
+        setEmail('')
+        setMessage('')
+        setPhone('')
+      })
 
       toast('Mensagem envada com sucesso!!', {
         style: {

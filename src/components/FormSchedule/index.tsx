@@ -4,6 +4,7 @@ import { sendScheduleMail } from '../../services/sendMail'
 import { InputBase } from '../Input'
 import toast from 'react-hot-toast'
 import InputMask from 'react-input-mask'
+import axios from 'axios'
 
 export function FormSchedule() {
   const [name, setName] = useState('')
@@ -29,12 +30,23 @@ export function FormSchedule() {
     }
     try {
       setLoading(true)
-      await sendScheduleMail(name, day, quantity, phone)
+      const data = {
+        NOME: name,
+        DATA: day,
+        QUANTIDADE_PESSOAS: quantity,
+        TELEFONE: phone,
+      }
 
-      setName('')
-      setDay('')
-      setQuantity('')
-      setPhone('')
+      axios.post('https://sheet.best/api/sheets/a3fec6f6-7813-4526-90cb-a6ca30a35f86', data)
+      .then((response) => {
+        console.log(response);
+        setName('')
+        setDay('')
+        setQuantity('')
+        setPhone('')
+      })
+
+     
 
       toast('Mensagem envada com sucesso!!', {
         style: {
@@ -53,6 +65,9 @@ export function FormSchedule() {
       setLoading(false)
     }
   }
+
+ 
+
   return (
     <form
       data-aos="fade-up"
