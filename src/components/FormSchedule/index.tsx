@@ -16,7 +16,6 @@ export function FormSchedule() {
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault()
-
     if (loading) return
 
     if (!name.trim() || !day.trim() || !quantity.trim() || !phone.trim()) {
